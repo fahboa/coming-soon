@@ -1,0 +1,99 @@
+/* Reset default styles and apply common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Page-wide container styles */
+.container {
+    position: relative;
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    min-height: 100vh;
+}
+
+/* Logo styles */
+.logo {
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+/* Content styles */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* Header styles */
+.content h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.content h1 span {
+    color: rgb(255, 255, 255);
+}
+
+/* Button styles */
+.content button {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 12px 25px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.content button img {
+    width: 15px;
+    margin-left: 10px;
+}
+
+/* Launch time styles */
+.launch-time {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.launch-time div {
+    flex-basis: 100px;
+    text-align: center;
+}
+
+.launch-time div p {
+    font-size: 2rem;
+    margin-bottom: -10px;
+}
+
+/* Rocket animation */
+.rocket {
+    position: absolute;
+    width: 250px;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 105%;
+        opacity: 1;
+    }
+}
